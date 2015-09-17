@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:fillViewport="true"
+    android:background="#008080"
+    android:gravity="top" >    
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btnCamara"
+        style="@style/TextoTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/selectOpcionImagen"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:id="@+id/ivDisplay"/>
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:background="#008080" 
+	    android:orientation="horizontal">
+    
+	    <Button
+	        android:id="@+id/btnGallery"
+	        style="@style/button_text"
+	        android:layout_width="150dp"
+	        android:layout_height="35dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/grey_button"
+	        android:text="@string/camaraFotos"
+	        android:onClick="camera" />
+	    
+	    <Button
+	        android:id="@+id/btnOK"
+	        style="@style/button_text"
+	        android:layout_width="150dp"
+	        android:layout_height="35dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/grey_button"
+	        android:text="@string/galeria"
+		    android:onClick="gallery" />
+	    
+	    <Button
+	        android:id="@+id/salir"
+	        style="@style/button_text"
+	        android:layout_width="150dp"
+	        android:layout_height="35dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/grey_button"
+	        android:text="@string/ok"
+		    android:onClick="seleccionar" />
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>
+</ScrollView>

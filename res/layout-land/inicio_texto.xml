@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:fillViewport="true"
+    android:background="#008080"
+    android:gravity="top" >
+       
+	<LinearLayout 
+    	android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="20dip" 
+    	android:orientation="vertical"
+    	android:background="#008080">
+         
+    	 <EditText android:id="@+id/titulo" android:layout_height="wrap_content" android:layout_width="fill_parent" 
+             android:hint="@string/titulo" android:inputType="text" />
+    
+         <EditText android:id="@+id/textoSup" android:layout_height="wrap_content" android:layout_width="fill_parent" 
+             android:hint="@string/textosup" android:inputType="text" 
+             android:paddingTop="15dp"/>
+         
+         <EditText android:id="@+id/textoSup2" android:layout_height="wrap_content" android:layout_width="fill_parent" 
+             android:hint="@string/textosup2" android:inputType="text" 
+             android:paddingTop="15dp"/>
+         
+         <EditText android:id="@+id/textoInf" android:layout_height="wrap_content" android:layout_width="fill_parent" 
+             android:hint="@string/textoinf" android:inputType="text"
+             android:paddingTop="15dp"
+             android:paddingBottom="15dp" />
+         
+         <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colorborde" />
+         <Spinner
+    		android:id="@+id/color"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:entries="@array/colors_arrays"
+    		android:prompt="@string/colors_prompt"/>
+         
+         <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colorinterior" />
+         <Spinner
+    		android:id="@+id/colorinterior"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:entries="@array/colors_arraysinterior"
+    		android:prompt="@string/colors_prompt"/>
+         
+         <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipoletra" />
+         <Spinner
+    		android:id="@+id/letra"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:entries="@array/letra_arrays"
+    		android:prompt="@string/letra_prompt"/>
+         
+         <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tamano" />
+         <Spinner
+    		android:id="@+id/tam"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:entries="@array/tam_arrays"
+    		android:prompt="@string/tam_prompt"    		
+    		android:paddingBottom="20dp" />
+         
+         
+         <Button
+	        android:id="@+id/btnOK"
+	        style="@style/button_text"
+	        android:layout_width="200dp"
+	        android:layout_height="35dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/grey_button"
+	        android:onClick="okText"
+	        android:text="@string/ok" />
+         
+        
+</LinearLayout>
+
+</ScrollView>

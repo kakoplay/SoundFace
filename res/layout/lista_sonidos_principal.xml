@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:fillViewport="true"
+    android:background="#008080"
+    android:gravity="top" >    
+  
+	<LinearLayout
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical" >  
+    
+	<TextView
+        style="@style/TextoTituloWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/listadoSonidos" />
+  
+    <ListView  
+        android:id="@+id/sms_model_list"  
+        android:layout_width="match_parent"  
+        android:layout_height="0dip"  
+        android:layout_weight="1.45" />  
+         
+     <LinearLayout android:id="@+id/LinearLayout02" 
+         android:layout_height="wrap_content"
+	     android:layout_width="match_parent">
+	    
+	  		<Button
+		        android:id="@+id/test_btn"
+		        style="@style/button_text"
+		        android:layout_width="150dp"
+		        android:layout_height="35dp"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/grey_button"
+		        android:text="@string/testSonido" />
+	  		
+	  		<Button
+		        android:id="@+id/stop_btn"
+		        style="@style/button_text"
+		        android:layout_width="150dp"
+		        android:layout_height="35dp"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/grey_button"
+		        android:text="@string/stopSonido" />
+	  		
+	</LinearLayout>
+	
+     <LinearLayout android:id="@+id/LinearLayout03" 
+         android:layout_height="wrap_content"
+	     android:layout_width="wrap_content">
+	  		
+         <Button
+		        android:id="@+id/confirm_btn"
+		        style="@style/button_text"
+		        android:layout_width="150dp"
+		        android:layout_height="35dp"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/grey_button"
+		        android:text="@string/selectSonido" />
+	  		
+	  		<Button
+		        android:id="@+id/externo_btn"
+		        style="@style/button_text"
+		        android:layout_width="150dp"
+		        android:layout_height="35dp"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/grey_button"
+		        android:text="@string/sonidoext" />
+         
+	    	
+	</LinearLayout>
+	
+     <LinearLayout android:id="@+id/LinearLayout04" 
+         android:layout_height="wrap_content"
+	     android:layout_width="wrap_content">
+         
+         <Button
+		        android:id="@+id/exit_btn"
+		        style="@style/button_text"
+		        android:layout_width="150dp"
+		        android:layout_height="35dp"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/grey_button"
+		        android:text="@string/salir" />
+	  		
+         
+	  		
+         
+	    	
+	</LinearLayout>
+  
+      
+</LinearLayout>
+    
+
+</ScrollView>

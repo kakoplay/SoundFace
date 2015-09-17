@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SoundFace</string>
+    
+    <!-- BOTONES -->
+    <string name="video">Acciones vídeo</string>
+    <string name="imagen">Acciones imagen</string>
+    <string name="salir">Salir</string>
+    <string name="entrar">Entrar</string>
+    <string name="ok">Aceptar</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+
+    <!-- TEXTO BOTONES -->
+    <string name="addImagen">Añadir imagen</string>
+    <string name="addImagenPre">Imagen predeterminada</string>
+    <string name="addImagenOtros">Añadir imagen camara/galería</string>
+    <string name="addSonido">Añadir sonido</string>
+    <string name="addTexto">Añadir texto</string>    
+    <string name="goVideo">Generar vídeo</string>
+    <string name="goImagenFinal">Generar imagen</string>
+    <string name="verVideo">Ver vídeo</string>
+    <string name="verImagen">Ver Imagen</string>
+    <string name="verLista">Ver lista imagenes</string>
+    <string name="verListaVideo">Ver lista videos</string>
+    <string name="compartirVideo">Compartir vídeo</string>
+    <string name="compartirImagen">Compartir imagen</string>
+    <string name="testSonido">Probar Sonido</string>
+    <string name="stopSonido">Stop Sonido</string>
+    <string name="selectSonido">Seleccionar Sonido</string>
+    <string name="selectImagen">Seleccionar Imagen</string>
+    <string name="selectOpcionImagen">Selecciona una opción</string>
+    <string name="listadoImagenes">Imágenes disponibles</string>
+    <string name="listadoSonidos">Sonidos disponibles</string>
+    <string name="borrarProducto">¿Desea borrar este registro?</string>
+    <string name="descartar">Descartar</string>
+    <string name="guardar">Guardar</string>
+    <string name="camaraFotos">Camara Fotos</string>
+    <string name="titulo">Título</string>
+    <string name="eliminarDescartar">Eliminar/Descartar Imagen</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="compartir">Compartir</string>
+    <string name="dibujar">Dibujar</string>
+    <string name="galeria">Galería</string>
+    <string name="ayudaListaImagenes">
+        Seleccione las imágenes que desee para operar con ellas.
+        Utilice la opción eliminar para borrar la imágenes definitivamente.
+        Utilice la opción ver para ver una sóla imagen seleccionada. 
+    </string>
+    <string name="textosup">Texto superior</string>
+    <string name="textosup2">Texto superior</string>
+    <string name="textoinf">Texto inferior</string>
+    <string name="colorborde">Color borde</string>
+    <string name="colorinterior">Color interior</string>
+    <string name="tipoletra">Tipo de letra</string>
+    <string name="tamano">Tamaño</string>
+    <string name="confirm">¿Desea borrar este registro?</string>
+    <string name="sonidoext">Sonido externo</string>
+    
+    <!-- MENSAJES -->
+    <string name="imagenok">Imagen generada correctamente</string>
+    <string name="waitvideo">Generando video, por favor espere...</string>
+    <string name="errordirectorio">Error al crear el directorio !!!</string>
+    <string name="videook">Video generado correctamente</string>
+    <string name="videonook">Error generando video</string>
+    <string name="selectsonido">Sonido seleccionado correctamente</string>
+    <string name="errorsave">Error al guardar resultado !!!</string>
+    <string name="seleccionar">Seleccionar</string>
+    <string name="imagenseleccionada">Imagen seleccionada</string>
+    <string name="imagenguardada">Imagen guardada</string>
+    <string name="errordownload">No se ha podido descargar la imagen</string>
+    <string name="selectimage">Seleccionando imagen, por favor espere...</string>
+    <string name="tituloobligatorio">El campo Título es obligatorio</string>
+    <string name="textoobligatorio">Debe introducir un texto previamente</string>
+    <string name="imagenobligatorio">Debe seleccionar una imagen previamente</string>
+    <string name="imagengenobligatorio">Debe generar una imagen previamente</string>
+    <string name="imagengenok">Generando imagen final, por favor espere...</string>
+    <string name="imagendescartada">Imagen descartada</string>
+    <string name="regeliminado">Registro eliminado</string>
+    <string name="debeselectsonido">Debe seleccionar un sonido previamente</string>
+    <string name="debeselectimagen">Debe seleccionar un/as imagen/es previamente</string>
+    <string name="regeliminados">Registros eliminados</string>
+ 	<string name="unosolo">Debe seleccionar un solo registro</string>
+    <string name="nohayselec">No hay registro seleccionado</string>
+    <string name="errordownlad">No se ha podido descargar la imagen</string>
+    
+    <!-- GENERICO -->
+    <string name="nodatos">No hay datos disponibles</string>
+    
+    <!-- MENU -->
+    <string name="bn">Blanco/Negro</string>
+    <string name="sepia">Sepia</string>
+    <string name="gcambio">Guardar cambio</string>
+    <string name="reset">Reset</string>
+        
+    
+    <!-- COMBO BOX -->
+    <string name="colors_prompt">Elige un color</string>
+    <string-array name="colors_arrays">
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Rojo</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+    </string-array>
+    
+    <string-array name="colors_arraysinterior">        
+        <item>Blanco</item>
+        <item>Negro</item>
+        <item>Rojo</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+    </string-array>
+    
+    <string name="letra_prompt">Elige tipo de letra</string>
+    <string-array name="letra_arrays">
+        <item>Arial</item>
+        <item>sans-serif</item>
+        <item>Roboto regular</item>   
+        <item>Helvetica</item>
+    </string-array>
+    
+    <string name="tam_prompt">Elige tamaño de letra</string>
+    <string-array name="tam_arrays">       
+        <item>Normal</item>
+        <item>Pequeño</item>
+        <item>Más Pequeño</item>
+        <item>Grande</item>
+    </string-array>
+    
+</resources>

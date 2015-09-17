@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.soundface"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+    <permission android:protectionLevel="signature"
+        android:name="com.android.soundface.permission.C2D_MESSAGE" />
+
+    <uses-permission android:name="com.android.soundface.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcherweb"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.android.soundface.imagen.AplicacionImagenes" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/ic_launcherweb"/>
+        
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.android.soundface" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver
+            android:name="com.android.soundface.Receiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        
+		
+        
+        <activity android:name=".video.InicioVideo"></activity>
+        <activity android:name=".ListaSonidos"></activity>
+        <activity android:name=".AyudaListaImagenes"></activity>        
+        <activity android:name=".imagen.InicioImagen"></activity>
+        <activity android:name=".imagen.DownloadImagen"></activity>        
+        <activity android:name=".video.VerListaVideos" android:noHistory="true" ></activity>
+        <activity android:name=".video.VerVideoGenerado"></activity>        
+        <activity android:name=".texto.InicioTextoImagen"></activity>  
+        <activity android:name=".texto.InicioTexto"></activity>
+        <activity android:name=".texto.AddImagen"></activity>
+        <activity android:name=".texto.VerImagenGenerada"></activity>
+        <activity android:name=".texto.VerListaImagenes" android:noHistory="true" ></activity>
+        <activity android:name=".texto.TextLineView"></activity>
+        
+    </application>
+    
+
+</manifest>

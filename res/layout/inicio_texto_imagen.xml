@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+ 
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="0.5">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/botonImagen"
+                    android:text="@string/addImagenPre"
+                    android:textSize="16sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="10dp"
+                    android:onClick="listarImagenes"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/imagen_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/botonImagenOtros"
+                    android:text="@string/addImagenOtros"
+                    android:textSize="16sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="10dp"
+                    android:onClick="addImagen"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/camera_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </TableRow>
+ 
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="0.5">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/botonTexto"
+                    android:text="@string/addTexto"
+                    android:textSize="16sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="10dp"
+                    android:onClick="addTexto"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/texto_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/botonImagenFinal"
+                    android:text="@string/goImagenFinal"
+                    android:textSize="16sp"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:onClick="generateImagenFinal"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/write_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>          
+        </TableRow>
+ 
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="0.5">
+              <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/botonVerImagen"                    
+                    android:text="@string/verImagen"
+                    android:textSize="16sp"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:onClick="verImagenGenerada"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/verimagen_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonLista"                    
+                    android:text="@string/verLista"
+                    android:textSize="16sp"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:onClick="verListaImagenes"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lista_icon"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>          
+        </TableRow>
+        
+<!--         <TableRow -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="0dp" -->
+<!--             android:weightSum="1" -->
+<!--             android:layout_weight="0.5"> -->
+<!--               <RelativeLayout -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_weight="0.5"> -->
+<!--                 <Button -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="match_parent" -->
+<!--                     android:id="@+id/botonVerImagen1"                     -->
+<!--                     android:text="@string/verImagen" -->
+<!--                     android:textSize="16sp" -->
+<!--                     android:gravity="center|bottom" -->
+<!--                     android:paddingBottom="10dp" -->
+<!--                     android:onClick="verImagenGenerada"/> -->
+<!--                 <ImageView -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:src="@drawable/verimagen_icon" -->
+<!--                     android:layout_centerInParent="true"/> -->
+<!--             </RelativeLayout> -->
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_weight="0.5"> -->
+<!--                 <Button -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="match_parent" -->
+<!--                     android:id="@+id/buttonCompartir"                     -->
+<!--                     android:text="@string/compartirImagen" -->
+<!--                     android:textSize="16sp" -->
+<!--                     android:gravity="center|bottom" -->
+<!--                     android:paddingBottom="10dp" -->
+<!--                     android:onClick="compartirImagen"/> -->
+<!--                 <ImageView -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:src="@drawable/compartir_icon" -->
+<!--                     android:layout_centerInParent="true"/> -->
+<!--             </RelativeLayout>           -->
+<!--         </TableRow> -->
+ 
+    </TableLayout>
+ 
+</LinearLayout>

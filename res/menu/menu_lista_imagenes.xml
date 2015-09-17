@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+       <item android:title="Seleccionar"
+             android:id="@+id/ver"
+             android:icon="@android:drawable/ic_menu_view"/>
+    
+       <item android:title="Eliminar"
+             android:id="@+id/eliminar"
+             android:icon="@android:drawable/ic_menu_delete"/>
+       
+       <item android:title="Ayuda"
+             android:id="@+id/ayuda"
+             android:icon="@android:drawable/ic_menu_info_details"/>
+
+</menu>
