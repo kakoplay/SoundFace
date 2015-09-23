@@ -73,7 +73,7 @@
         <activity android:name=".video.InicioVideo"></activity>
         <activity android:name=".ListaSonidos"></activity>
         <activity android:name=".AyudaListaImagenes"></activity>        
-        <activity android:name=".imagen.InicioImagen"></activity>
+        <activity android:name=".imagen.InicioImagen" android:configChanges="orientation|screenSize" ></activity>
         <activity android:name=".imagen.DownloadImagen"></activity>        
         <activity android:name=".video.VerListaVideos" android:noHistory="true" ></activity>
         <activity android:name=".video.VerVideoGenerado"></activity>        

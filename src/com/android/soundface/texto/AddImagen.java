@@ -30,9 +30,6 @@ public class AddImagen extends  Activity {
 	private ProgressDialog dialog;
 	private String tipoAccion;
 	
-	private Bitmap change;
-	private Uri urichange;
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 	      super.onCreate(savedInstanceState);
@@ -42,6 +39,13 @@ public class AddImagen extends  Activity {
 	      tipoAccion = bundle.getString("tipo");
 	      
 	      imageview = (ImageView) findViewById(R.id.ivDisplay);
+	      
+	      if(savedInstanceState != null) {
+	          Bitmap bitmap = savedInstanceState.getParcelable("bitmap");
+	          if(bitmap!=null)
+	        	  imageview.setImageBitmap(bitmap);
+		  }
+	      
 	   
 	}
 	
@@ -73,6 +77,8 @@ public class AddImagen extends  Activity {
 		finish();
 	}
 	
+	
+	
 	protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent) { 
 		super.onActivityResult(requestCode, resultCode, imageReturnedIntent); 
 		switch(requestCode) {
@@ -80,7 +86,7 @@ public class AddImagen extends  Activity {
 			    if(resultCode == RESULT_OK){
 			        Bitmap photo = (Bitmap) imageReturnedIntent.getExtras().get("data"); 
 		            imageview.setImageBitmap(photo);
-		            change = photo;
+		            
 			    }	
 			    break; 
 			case 1:
@@ -99,13 +105,12 @@ public class AddImagen extends  Activity {
 				        	matrix.postRotate(90);
 				        	Bitmap rotatedBitmap = Bitmap.createBitmap(yourSelectedImage, 0, 0, yourSelectedImage.getWidth(), yourSelectedImage.getHeight(), matrix, true);
 				        	imageview.setImageBitmap(rotatedBitmap);
-				        	change = rotatedBitmap;
+				        	
 		                } catch (FileNotFoundException e) {		                    
 		                    e.printStackTrace();		                    
 		                }
-			        }else{
+			        }else{			        	
 			        	imageview.setImageURI(selectedImage);
-			        	urichange = selectedImage;
 			        }
 			    }
 			    break;
@@ -153,35 +158,21 @@ public class AddImagen extends  Activity {
 	    }
 	}
 	
-//	@Override
-//	 public void onBackPressed() {
-//		Intent i = new Intent(this, InicioVideo.class);	   
-//	    startActivity(i);	
-//	    super.onBackPressed();
-//	 }
 	
+	@Override
+	public void onSaveInstanceState(Bundle savedInstanceState) {
+		BitmapDrawable d = (BitmapDrawable)imageview.getDrawable();
+		if(d!=null){
+			Bitmap bitmap = d.getBitmap();
+			savedInstanceState.putParcelable("bitmap", bitmap);
+		}
+	  	super.onSaveInstanceState(savedInstanceState);
+	}
 	
-//	@Override
-//	public void onSaveInstanceState(Bundle savedInstanceState) {
-//	  super.onSaveInstanceState(savedInstanceState);
-//	  if(change != null)
-//		  savedInstanceState.putParcelable("bitmap", change);
-//	  if(urichange != null)
-//		  savedInstanceState.putParcelable("uri", urichange);
-//	}
-//	
-//	@Override
-//	public void onRestoreInstanceState(Bundle savedInstanceState) {
-//	  super.onRestoreInstanceState(savedInstanceState);
-//
-//	  if(change != null){
-//		  Bitmap bm = savedInstanceState.getParcelable("bitmap");
-//		  imageview.setImageBitmap(bm);
-//	  }
-//	  if(urichange != null){
-//		  Uri url = savedInstanceState.getParcelable("uri");
-//		  imageview.setImageURI(url);
-//	  }
-//	}
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+	}
+	
 	
 }

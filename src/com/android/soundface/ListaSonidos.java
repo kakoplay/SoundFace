@@ -54,8 +54,7 @@ public class ListaSonidos extends Activity{
         listAdapter.setList(list);  
         listView.setAdapter(listAdapter);  
           
-//        final Intent intent = new Intent(MainActivity.this,NextActivity.class);  
-//        intent.putExtra("selectedBook", "ssssss");  
+
         listView.setOnItemClickListener(new OnItemClickListener() {  
             @Override  
             public void onItemClick(AdapterView<?> parent, View view,  int position, long id) {  

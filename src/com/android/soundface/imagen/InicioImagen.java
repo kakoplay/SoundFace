@@ -1,7 +1,7 @@
 package com.android.soundface.imagen;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
@@ -11,7 +11,6 @@ import com.android.soundface.MainActivity;
 import com.android.soundface.R;
 import com.android.soundface.fragment.DetalleFragment;
 import com.android.soundface.fragment.SelectorFragment;
-import com.android.soundface.video.InicioVideo;
 
 public class InicioImagen extends FragmentActivity {
 		
@@ -69,5 +68,7 @@ public class InicioImagen extends FragmentActivity {
 //	    startActivity(i);	
 //	    super.onBackPressed();
 //	 }
+	 
+	 
 }
 		

@@ -14,15 +14,10 @@ import org.bytedeco.javacv.FrameGrabber;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.support.v4.content.CursorLoader;
 import android.view.View;
 import android.widget.Toast;
 
@@ -227,7 +222,7 @@ public class InicioVideo extends Activity {
 
             } catch (Exception e) {
                 e.printStackTrace();
-                result = "NOOK";
+                result = "NOOK : "+e.toString();
             } finally{
             	try {
 					File file = new File(imagePath, imagenMostrar.getDescImagen());
@@ -251,6 +246,7 @@ public class InicioVideo extends Activity {
             	Toast.makeText(InicioVideo.this, getString(R.string.videook), Toast.LENGTH_SHORT).show();
             }else{
             	Toast.makeText(InicioVideo.this, getString(R.string.videonook), Toast.LENGTH_SHORT).show();
+            	Toast.makeText(InicioVideo.this, result, Toast.LENGTH_SHORT).show();
             }
          
         }
