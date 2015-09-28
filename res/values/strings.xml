@@ -85,6 +85,7 @@
  	<string name="unosolo">Debe seleccionar un solo registro</string>
     <string name="nohayselec">No hay registro seleccionado</string>
     <string name="errordownlad">No se ha podido descargar la imagen</string>
+    <string name="goback">Pulse de nuevo para volver a la pantalla anterior</string>
     
     <!-- GENERICO -->
     <string name="nodatos">No hay datos disponibles</string>

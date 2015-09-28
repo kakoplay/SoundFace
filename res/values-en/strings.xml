@@ -82,6 +82,7 @@
  	<string name="unosolo">You must select only one data</string>
     <string name="nohayselec">There is not a selected data</string>
     <string name="sonidoext">External sound</string>
+    <string name="goback">Click again to return</string>
     
     <!-- MENU -->
     <string name="bn">White/Black</string>

@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.android.soundface.Constantes;
@@ -48,7 +49,32 @@ public class VerImagenGenerada extends Activity{
         if(img!=null){
         	imageview.setImageBitmap(img);        	
         }
+        
+        
+        imageview.setOnClickListener(new View.OnClickListener() {
+        	
+        	boolean isImageFitToScreen;
+        	
+            @Override
+            public void onClick(View v) {
+                if(isImageFitToScreen) {
+                    isImageFitToScreen=false;
+                    imageview.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+                    imageview.setAdjustViewBounds(true);
+                }else{
+                    isImageFitToScreen=true;
+                    imageview.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
+                    imageview.setScaleType(ImageView.ScaleType.FIT_XY);
+                    Toast.makeText(VerImagenGenerada.this, getString(R.string.imagenguardada), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
                 
+    }
+	
+	public void verCompleto(View v) {        
+		imageview.setImageBitmap(img);
+		imgSave = img;
     }
 	
 	public void resetImagen(View v) {        

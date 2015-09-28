@@ -1930,7 +1930,7 @@ containing a value of this type.
         /**  MENU 
  MENU 
          */
-        public static final int bn=0x7f0a005b;
+        public static final int bn=0x7f0a005c;
         public static final int borrarProducto=0x7f0a002c;
         public static final int camaraFotos=0x7f0a002f;
         public static final int cancelar=0x7f0a0033;
@@ -1939,7 +1939,7 @@ containing a value of this type.
         /**  COMBO BOX 
  COMBO BOX 
          */
-        public static final int colors_prompt=0x7f0a005f;
+        public static final int colors_prompt=0x7f0a0060;
         public static final int compartir=0x7f0a0034;
         public static final int compartirImagen=0x7f0a0024;
         public static final int compartirVideo=0x7f0a0023;
@@ -1956,9 +1956,10 @@ containing a value of this type.
         public static final int errordownload=0x7f0a004b;
         public static final int errorsave=0x7f0a0047;
         public static final int galeria=0x7f0a0036;
-        public static final int gcambio=0x7f0a005d;
+        public static final int gcambio=0x7f0a005e;
         public static final int goImagenFinal=0x7f0a001e;
         public static final int goVideo=0x7f0a001d;
+        public static final int goback=0x7f0a005a;
         public static final int guardar=0x7f0a002e;
         public static final int imagen=0x7f0a0012;
         public static final int imagendescartada=0x7f0a0052;
@@ -1971,19 +1972,19 @@ containing a value of this type.
          */
         public static final int imagenok=0x7f0a0041;
         public static final int imagenseleccionada=0x7f0a0049;
-        public static final int letra_prompt=0x7f0a0060;
+        public static final int letra_prompt=0x7f0a0061;
         public static final int listadoImagenes=0x7f0a002a;
         public static final int listadoSonidos=0x7f0a002b;
         public static final int no=0x7f0a0017;
         /**  GENERICO 
  GENERICO 
          */
-        public static final int nodatos=0x7f0a005a;
+        public static final int nodatos=0x7f0a005b;
         public static final int nohayselec=0x7f0a0058;
         public static final int ok=0x7f0a0015;
         public static final int regeliminado=0x7f0a0053;
         public static final int regeliminados=0x7f0a0056;
-        public static final int reset=0x7f0a005e;
+        public static final int reset=0x7f0a005f;
         public static final int salir=0x7f0a0013;
         public static final int seleccionar=0x7f0a0048;
         public static final int selectImagen=0x7f0a0028;
@@ -1991,11 +1992,11 @@ containing a value of this type.
         public static final int selectSonido=0x7f0a0027;
         public static final int selectimage=0x7f0a004c;
         public static final int selectsonido=0x7f0a0046;
-        public static final int sepia=0x7f0a005c;
+        public static final int sepia=0x7f0a005d;
         public static final int si=0x7f0a0016;
         public static final int sonidoext=0x7f0a0040;
         public static final int stopSonido=0x7f0a0026;
-        public static final int tam_prompt=0x7f0a0061;
+        public static final int tam_prompt=0x7f0a0062;
         public static final int tamano=0x7f0a003e;
         public static final int testSonido=0x7f0a0025;
         public static final int textoinf=0x7f0a003a;
